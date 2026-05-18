@@ -1,11 +1,11 @@
-export default function Entry() {
+export default function Entry(props) {
   return (
     <main className="p-11">
       <section>
         <div className="flex items-center gap-5">
           <img
-            src="https://scrimba.com/links/travel-journal-japan-image-url"
-            alt="mount fuji"
+            src={props.img.src}
+            alt={props.img.alt}
             className="w-31.25 h-42 rounded-sm"
           />
           <div className="flex flex-col gap-1">
@@ -17,23 +17,22 @@ export default function Entry() {
                   className="w-2.5"
                 />
                 <p className="tracking-[17%] leading-[100%] text-[0.70rem]">
-                  JAPAN
+                  {props.country}
                 </p>
               </div>
 
-              <p className="text-[#918E9B] underline text-xs">
+              <a
+                href={props.googleMapsLink}
+                className="text-[#918E9B] underline text-xs cursor-pointer hover:text-[#d5d2e0]"
+              >
                 View on Google Maps
-              </p>
+              </a>
             </div>
             <div className="flex flex-col gap-3">
-              <p className="font-bold text-2xl">Mount Fuji</p>
+              <p className="font-bold text-2xl">{props.title}</p>
               <div className="flex flex-col gap-2">
-                <p className="font-bold text-xs">12 Jan, 2023 - 24 Jan, 2023</p>
-                <p className="text-xs">
-                  Mount Fuji is the tallest mountain in Japan, standing at 3,776
-                  meters (12,380 feet). Mount Fuji is the single most popular
-                  tourist site in Japan, for both Japanese and foreign tourists.
-                </p>
+                <p className="font-bold text-xs">{props.dates}</p>
+                <p className="text-xs">{props.text}</p>
               </div>
             </div>
           </div>
