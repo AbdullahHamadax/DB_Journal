@@ -18,7 +18,7 @@ export default [
       alt: "Planet Namek",
     },
     title: "Planet Namek",
-    country: "Namek System",
+    country: "Trinity Star System",
     googleMapsLink: "https://maps.app.goo.gl/Zr17SCrsJeCEKMd36",
     dates: "27 May, 2021 - 8 Jun, 2021",
     text: "Planet Namek is the home world of the Namekian race, including Piccolo and the great Elder Guru. Bathed in the light of three suns, its lush green landscape hides the original Dragon Balls — capable of granting any wish. A must-visit, if you can survive Frieza's forces.",
